@@ -1,11 +1,16 @@
 name: Demo workflow
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - "dev"
+      - "master"
+
 jobs:
-  print:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello from GitHub Actions
-        run: echo "Hello GitHub Actions!"
-      - name: Hello number two from GitHub Actions
-        run: echo "Hello2 GitHub Actions!"
+      - name: Push repo
+        uses: actions/checkout@v3
+      - name: Hello
+        run: echo "Hello World!"
       
