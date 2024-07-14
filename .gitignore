@@ -1,0 +1,16 @@
+# Environment Variables
+.env
+.venv
+# Python Virtual Environment
+venv
+env
+
+# Python and Fastapi temporary files
+__pycache__
+*.py[cod]
+*$py.class
+
+# IDE
+.fleet
+.idea
+.vscode
