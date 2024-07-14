@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: Hello from GitHub Actions
         run: echo "Hello GitHub Actions!"
+      - name: Hello number two from GitHub Actions
+        run: echo "Hello2 GitHub Actions!"
+      
